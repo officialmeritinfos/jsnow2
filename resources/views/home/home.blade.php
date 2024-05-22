@@ -115,497 +115,198 @@
     @endpush
 
 
-    <!-- banner slider start -->
-    <section class="banner-slider__wrapper banner-slider__wrapper_2 overflow-hidden">
-        <div class="slider-controls slider-controls-2">
-            <div class="banner-slider-arrows d-flex flex-column"></div>
-        </div>
 
-        <div class="banner-slider_2">
-            <div class="slider-item" style="background-image: url({{asset('home/serv/stock.jpg')}});">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="banner__content">
-                                <h6 class="sub-title color-white mb-15 mb-sm-15 mb-xs-10" data-animation="fadeInUp" data-delay="0.5s">
-                                    Invest in the Stock Market
-                                </h6>
-                                <h1 class="title color-white mb-sm-30 mb-xs-20 mb-40" data-animation="fadeInUp" data-delay="1s">
-                                    Grow Your Wealth<br> <span> With the Stock market</span></h1>
-                                <p class="sub-title color-white mb-15 mb-sm-15 mb-xs-10 text-dark">
-                                    We have a great expertise in the stock market which allows us to easily and safely trade your funds in the
-                                    stock market with a guaranteed earning - using our unique trading strategy
-                                </p>
-
-                                <div class="theme-btn__wrapper mt-30">
-                                    <a href="{{route('register')}}" class="theme-btn btn-sm btn__2" data-animation="fadeInUp"
-                                       data-delay="1.3s">Get Started <i class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="shape-element-left d-none d-lg-block">
-                    <img src="{{asset('home/img/home-5/slider-shape_r.svg')}}')}}')}}" alt="">
-                </div>
-                <div class="shape-element-rignt d-none d-lg-block">
-                    <img src="{{asset('home/img/home-5/slider-shape_l.svg')}}')}}')}}" alt="">
-                </div>
-            </div>
-
-            <div class="slider-item" style="background-image: url({{asset('home/img/banner/banne-slider-1.png')}});">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="banner__content banner__content_2">
-                                <h6 class="sub-title color-white mb-15 mb-sm-15 mb-xs-10" data-animation="fadeInUp" data-delay="0.5s">
-                                    Solution for Novice
-                                </h6>
-                                <h1 class="title color-white mb-sm-30 mb-xs-20 mb-40" data-animation="fadeInUp" data-delay="1s">Navigate the financial
-                                    <br> <span>Market with Confidence</span></h1>
-                                <p class="sub-title color-white mb-15 mb-sm-15 mb-xs-10">
-                                    Unlock the power the financial market - forex, stocks, real estate, oil and gas etc, with the help of experts
-                                </p>
-
-                                <div class="theme-btn__wrapper mt-30">
-                                    <a href="{{route('register')}}" class="theme-btn btn-sm btn__2" data-animation="fadeInUp" data-delay="1.3s">Get Started <i class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="shape-element-left d-none d-lg-block">
-                    <img src="{{asset('home/img/home-5/slider-shape_r.svg')}}')}}')}}" alt="">
-                </div>
-                <div class="shape-element-rignt d-none d-lg-block">
-                    <img src="{{asset('home/img/home-5/slider-shape_l.svg')}}')}}')}}" alt="">
-                </div>
-            </div>
-
-            <div class="slider-item" style="background-image: url({{asset('home/serv/1.jpg')}});">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="banner__content banner__content_2">
-                                <h6 class="sub-title color-white mb-15 mb-sm-15 mb-xs-10" data-animation="fadeInUp" data-delay="0.5s">
-                                    Plan for Retirement
-                                </h6>
-                                <h1 class="title color-white mb-sm-30 mb-xs-20 mb-40" data-animation="fadeInUp" data-delay="1s">Secure your Tomorrow <br> <span>Today</span></h1>
-                                <p class="sub-title color-white mb-15 mb-sm-15 mb-xs-10 text-dark">
-                                    Not only do we offer you the opportunity to grow your wealth today, we also allow you stock up for your
-                                    retirement plans - making retirement an euphoria you dream and live everyday
-                                </p>
-
-                                <div class="theme-btn__wrapper mt-30">
-                                    <a href="{{route('register')}}" class="theme-btn btn-sm btn__2" data-animation="fadeInUp" data-delay="1.3s">Get Started <i class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="shape-element-left d-none d-lg-block">
-                    <img src="{{asset('home/img/home-5/slider-shape_r.svg')}}')}}')}}" alt="">
-                </div>
-                <div class="shape-element-rignt d-none d-lg-block">
-                    <img src="{{asset('home/img/home-5/slider-shape_l.svg')}}')}}')}}" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- banner slider end -->
-
-    <!-- competitive-edge start -->
-    <section class="competitive-edge competitive-edge_2 overflow-hidden">
-        <div class="container">
-            <div class="fauture__element bg-center bg-cover " style="background-image: url({{asset('home/img/home-5/banner_03.png')}});">
-                <div class="row">
-                    <div class=" col-lg-4 col-md-12 mt-30">
-                        <div class="fauture__widget">
-                            <div class="fauture__icons">
-                                <div class="icon"><i class="fal fa-analytics"></i></div>
-                                <h4>01</h4>
-                            </div>
-                            <div class="fauture__content">
-                                <h4>Build Your Future With Right Way</h4>
-                                <p>There are many variations of packages to select from and earn</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col-lg-4 col-md-12 mt-30">
-                        <div class="fauture__widget">
-                            <div class="fauture__icons">
-                                <div class="icon">
-                                    <i class="icon-like-comment"></i>
-                                </div>
-                                <h4>02</h4>
-                            </div>
-                            <div class="fauture__content">
-                                <h4>We Take Care for the growth of your assets</h4>
-                                <p>With our experts, we are always available to take care of your investments</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col-lg-4 col-md-12 mt-30">
-                        <div class="fauture__widget">
-                            <div class="fauture__icons">
-                                <div class="icon">
-                                    <i class="icon-teamwork-1"></i>
-                                </div>
-                                <h4>03</h4>
-                            </div>
-                            <div class="fauture__content">
-                                <h4>Financial Projections And Analysis</h4>
-                                <p>A well-detailed financial analysis for your investment right in your dashboard.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="staff__widget mt-30">
-                            <span> Our nearly 120+ staff are ready to help you? <i class="fas fa-paper-plane"></i> <a href="{{route('register')}}">Get Started</a> </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- competitive-edge end -->
-
-    <!-- about__wrapper start -->
-    <section class="about__wrapper section-padding  overflow-hidden">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-7 col-sm-6">
-                    <div class="about_img">
-                        <img src="{{asset('home/img/home-5/work_01.png')}}" class="img-fluid" alt>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-5 col-sm-6">
-                    <div class="about_widget">
-                        <img src="{{asset('home/img/home-5/about_01.png')}}" class="img-fluid" alt>
-                        <div class="d-flex align-items-center years-experience years-experience_tow  overflow-hidden mt-20 mt-sm-10 mt-xs-10">
-                            <div class="icons color-secondary">
-                                <i class="icon-teamwork-1"></i>
-                            </div>
-                            <div class="number">
-                                <span class="counter mb-3">13</span><sup>+</sup>
-                                <h5 class="title">Years Experience</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-lg-5 col-md-12 ">
-                    <div class="section-title section-title_2">
-                        <h5><img src="{{asset('home/img/home-5/bage.svg')}}')}}')}}" alt> About Us</h5>
-                        <h2 class="mb-20">We Create a Culture That Inspires Us To Work Smart <span>Together</span></h2>
-                        <p>
-                            Founded in 2010, we are a global investment agency helping individuals build their financial dreams into reality. From a humble beginning, we have grown to become a notable force in the investment industry with over 40K+ users.
-                        </p>
-                    </div>
-                    <div class="about_content">
+    <!-- Hero area starts-->
+    <section class="hero-area">
+        <div class="hero-slider">
+            <div class="active-slider">
+                <div class="single-slider-one hero-utility">
+                    <div class="container">
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="icons">
-                                        <i class="icon-teamwork-1"></i>
-                                    </div>
-                                    <h5>AI-Integrated</h5>
+                            <div class="col-xl-8 col-lg-8">
+                                <div class="hero-text">
+                                    <p> <i class="fas fa-angle-double-right"></i>
+                                        Utilize cutting-edge AI technology to identify and engage in
+                                        high-potential ventures
+                                    </p>
+                                    <h1>
+                                        Harnessing the Power of Artificial Intelligence for <br>
+                                        <span>Sustainable and Profitable</span> Investments
+                                    </h1>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="icons">
-                                        <i class="icon-teamwork-1"></i>
-                                    </div>
-                                    <h5>Financial Prudence</h5>
+
+                                <div class="hero-cta d-flex align-items-center">
+                                    <a href="{{route('register')}}" class="button header-cta">Get Started</a>
+
+                                    <a href="{{route('login')}}" class="link">Login to Account</a>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p>Looking for the best investment agency to help you grow your wealth? </p>
-                    <a href="{{url('about')}}" class="theme-btn btn__2">Read More <i class="fal fa-long-arrow-right"></i></a>
+                </div>
+
+
+                <div class="single-slider-two hero-utility">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-8">
+                                <div class="hero-text">
+                                    <p> <i class="fas fa-angle-double-right"></i> Unlock the Wealth of  <span>Tomorrow</span></p>
+                                    <h1>
+                                        At {{$siteName}}, we harness the power of AI to unlock the untapped potentials.
+                                    </h1>
+                                </div>
+
+                                <div class="hero-cta d-flex align-items-center">
+                                    <a href="{{route('register')}}" class="button header-cta">Get Started</a>
+
+                                    <a href="{{route('login')}}" class="link">Login to Account</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- about__wrapper end -->
+    <!-- Hero area ends -->
 
-    <!-- employee-friendly start -->
-    <section class="employee__wrapper employee__wrapper_2 overflow-hidden">
+    <!-- About Area Starts -->
+    <section class="about" style="margin-top: -5rem;">
         <div class="container">
-            <div class="row align-items-center mb-30">
-                <div class="col-lg-8 col-md-8">
-                    <div class="section-title section-title_2">
-                        <h5> <img src="{{asset('home/img/home-5/bage.svg')}}')}}')}}" alt> Services</h5>
-                        <h2>User-Friendly <span>Service</span></h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="section-title">
+                            <div class="sub-heading">
+                                <img src="{{asset('home/images/section-title-icon.png')}}" alt="caret">
+                                <p>Who we are</p>
+                            </div>
+                            <h2>Sustainable Strategy based on AI</h2>
+                        </div>
+
+                        <div class="text-content">
+                            <p>
+                                At {{$siteName}}, we are at the forefront of the investment landscape,
+                                leveraging the unparalleled capabilities of artificial intelligence (AI) to
+                                drive success. With a focus on stocks,trading, mining, oil and gas, as well as gold and
+                                precious metal mining, we empower investors to unlock transformative opportunities
+                                for growth and profitability. Our AI algorithms harness the power of big data,
+                                enabling us to analyze market trends, identify emerging sectors, and make
+                                data-driven investment decisions that deliver exceptional results.
+                            </p>
+
+                            <div class="progress-wrapper">
+                                <div class="progress-one">
+                                    <div class="progress-bar" data-percent="98" data-duration="1000"></div>
+                                    <h5>Client Satisfied</h5>
+                                </div>
+
+                                <div class="progress-two">
+                                    <div class="progress-bar" data-percent="97" data-duration="1000"></div>
+                                    <h5>Strategic
+                                        Efficiency</h5>
+                                </div>
+                            </div>
+
+                            <p >
+                                Powered by advanced artificial intelligence (AI) algorithms, {{$siteName}} provides
+                                cutting-edge solutions to help clients earn from the dynamic world of cryptocurrencies
+                                with confidence and success.<br/>
+                                With our AI-driven investment strategies, we analyze extensive market data, historical
+                                trends, and real-time indicators to make informed investment decisions and optimize
+                                portfolio performance.
+                            </p>
+
+
+                            <a href="{{url('about')}}" class="button header-cta about-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 r-margin-top">
+
+                    <div class="about-img">
+                        <img src="{{asset('home/images/rpa1.jpeg')}}" alt="team">
+                        <img src="{{asset('home/images/abt-overlay.png')}}" alt="overlay" class="overlay">
+                    </div>
+
+                    <div class="experience">
+                        <span>15</span>
+                        <p>Years of experience</p>
+                    </div>
+
+                    <div class="quote">
+                        <h5>We’re Committed For Creating Change.</h5>
+                        <div class="quote-info">
+                            <img src="{{asset('home/images/small-image.png')}}" alt="man">
+
+                            <div class="meta-info">
+                                <p>Joseph Colman</p>
+                                <span>CEO & Founder</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About area ends -->
+
+    <!-- Offer area starts -->
+    <section class="offer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <div class="sub-heading">
+                            <img src="{{asset('home/images/section-title-icon.png')}}" alt="caret">
+                            <p>Services</p>
+                        </div>
+                        <h2>Sectors & Industry of Interest</h2>
                     </div>
                 </div>
             </div>
-            <div class="row">
+
+            <div class="row g-4">
                 @foreach($services as $service)
-                    <div class="col-lg-4 col-md-6 col-12 mt-30">
-                        <div class="single_card_item text-center">
-                            <div class="card_img">
-                                <img src="{{asset('home/serv/'.$service->photo)}}" alt="">
-                            </div>
-                            <div class="card_content card_content_2">
-                                <div class="content">
-                                    <h4>{{$service->title}}</h4>
-                                    <p>{{\Illuminate\Support\Str::words($service->short,30)}}</p>
-                                </div>
+                    <div class="col-md-4 mt-3">
+                        <div class="card">
+                            <img src="{{asset('home/serv/'.$service->photo)}}" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title">{{$service->title}}</h5>
+                                <p class="card-text">
+                                    {{\Illuminate\Support\Str::words($service->short,30)}}
+                                </p>
+
                                 <a href="{{route('service.details',['id'=>$service->id])}}" class="btn_2"> Read Details <i class="fal fa-long-arrow-right"></i></a>
                             </div>
-
                         </div>
                     </div>
                 @endforeach
             </div>
         </div>
     </section>
-    <!-- employee-friendly end -->
-
-    <!-- working_wrapper start-->
-    <section class="working_wrapper section-padding overflow-hidden">
-        <div class="container">
-            <div class="row align-items-center mb-30">
-                <div class="col-lg-12 col-md-12">
-                    <div class="section-title section-title_2 text-center">
-                        <h5> <img src="{{asset('home/img/home-5/bage.svg')}}')}}')}}" alt> Work Process</h5>
-                        <h2>Our Working Process</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-4 mt-30 position-relative">
-                    <div class="process__widget process__widget_2 text-center">
-                        <div class="icon__widget">
-                            <div class="icons">
-                                <i class="icon-outline"></i>
-                            </div>
-                        </div>
-                        <h4>Registration</h4>
-                        <p>Simply Register an account to join us</p>
-                    </div>
-                    <div class="arrow__element d-none d-md-block">
-                        <img src="{{asset('home/img/home-5/arrow_r_01.svg')}}')}}')}}" alt>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 mt-30 position-relative">
-                    <div class="process__widget process__widget_2 text-center">
-                        <div class="icon__widget">
-                            <div class="icons">
-                                <i class="icon-outline"></i>
-                            </div>
-                        </div>
-                        <h4>Select Package & Deposit</h4>
-                        <p>Select the package that best fits your need and deposit to activate it</p>
-                    </div>
-                    <div class="arrow__element d-none d-md-block">
-                        <img src="{{asset('home/img/home-5/arrow_r_01.svg')}}')}}')}}" alt>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 mt-30 position-relative">
-                    <div class="process__widget process__widget_2 text-center">
-                        <div class="icon__widget">
-                            <div class="icons">
-                                <i class="icon-outline"></i>
-                            </div>
-                        </div>
-                        <h4>Strategy & Planning</h4>
-                        <p>Upon activation of your package, our staff plan the best investent approach that guarantees the best return</p>
-                    </div>
-                    <div class="arrow__element d-none d-lg-block">
-                        <img src="{{asset('home/img/home-5/arrow_r_01.svg')}}')}}')}}" alt>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 mt-30 position-relative">
-                    <div class="process__widget process__widget_2 text-center">
-                        <div class="icon__widget">
-                            <div class="icons">
-                                <i class="icon-outline"></i>
-                            </div>
-                        </div>
-                        <h4>Earn & Withdraw</h4>
-                        <p>
-                            With successful planning, you earn and can withdraw or reinvest your earnings to stock up for
-                            retirememnt
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- working_wrapper end-->
-    <!-- fun-fact_wrapper start -->
-    <section class="fun-fact_wrapper section-padding bg-center bg-cover overflow-hidden" style="background-image: url({{asset('home/img/home-5/bg_02.png')}});">
+    <!-- Offer area ends -->
+    <!-- Blog starts -->
+    <section class="blog">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-md-6">
-                    <div class="section-title ">
-                        <h2 class="text-white">More than 13 years of experience</h2>
-                        <img src="{{asset('home/img/home-5/bage_02.svg')}}')}}')}}" alt="">
-                        <h5 class="text-white">30000+ our clients are insured around the World</h5>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-6">
-                    <div class="row">
-                        <div class="col-md-6 mt-30">
-                            <div class="counter-area__item counter-area__item-fore d-flex align-items-center">
-                                <div class="icon color-yellow">
-                                    <i class="icon-process-1"></i>
-                                </div>
-
-                                <div class="text">
-                                    <div class="number fw-600 color-yellow"><span class="counter">56200</span>+</div>
-                                    <div class="description font-la text-white">Successful Investments</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mt-30">
-                            <div class="counter-area__item counter-area__item-fore  d-flex align-items-center">
-                                <div class="icon color-yellow">
-                                    <i class="icon-support-2"></i>
-                                </div>
-
-                                <div class="text">
-                                    <div class="number fw-600 color-yellow"><span class="counter">120</span>+</div>
-                                    <div class="description font-la text-white">Expert Staff</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mt-30">
-                            <div class="counter-area__item counter-area__item-fore  d-flex align-items-center">
-                                <div class="icon color-yellow">
-                                    <i class="icon-coffee-2"></i>
-                                </div>
-
-                                <div class="text">
-                                    <div class="number fw-600 color-yellow"><span class="counter">10</span>+</div>
-                                    <div class="description font-la text-white">Awards Received</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mt-30">
-                            <div class="counter-area__item counter-area__item-fore d-flex align-items-center">
-                                <div class="icon color-yellow">
-                                    <i class="icon-teamwork-1"></i>
-                                </div>
-
-                                <div class="text">
-                                    <div class="number fw-600 color-yellow"><span class="counter">323</span>M+</div>
-                                    <div class="description font-la text-white">Successful Payouts</div>
-                                </div>
-                            </div>
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <div class="sub-heading">
+                            <img src="{{asset('home/images/section-title-icon.png')}}" alt="caret">
+                            <p>Investment Packages</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- fun-fact_wrapper start -->
 
-    <!-- Our Testimonials start -->
-
-    <section class="testimonial_wrapper section-padding overflow-hidden">
-        <div class="container">
-            <div class="row align-items-center mb-60">
-                <div class="col-lg-8 col-md-8">
-                    <div class="section-title section-title_2">
-                        <h5> <img src="{{asset('home/img/home-5/bage.svg')}}')}}')}}" alt=""> testimonials</h5>
-                        <h2>Our Testimonials</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial_element">
-
-                <div class="slingle_agent">
-                    <div class="d-flex">
-                        <div class="agent_author">
-                            <div class="author">
-                                <img src="https://ui-avatars.com/api/?name=Silver+alex" alt="">
-                            </div>
-                            <div class="quote">
-                                <i class="fas fa-quote-right"></i>
-                            </div>
-                        </div>
-                        <div class="agent_content">
-                            <div class="authoe_name">
-                                <h4>Silver Alex</h4>
-                                <h5>Investor</h5>
-                            </div>
-                            <p>
-                                Investing with {{$siteName}} has been a game-changer for my financial world.
-                                My first investment of $150 grew to yield over $1000 and that increased my faith in them.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slingle_agent">
-                    <div class="d-flex">
-                        <div class="agent_author">
-                            <div class="author">
-                                <img src="https://ui-avatars.com/api/?name=Sarah+T" alt="">
-                            </div>
-                            <div class="quote">
-                                <i class="fas fa-quote-right"></i>
-                            </div>
-                        </div>
-                        <div class="agent_content">
-                            <div class="authoe_name">
-                                <h4>Sarah T.</h4>
-                                <h5>Investor</h5>
-                            </div>
-                            <p>
-                                {{$siteName}} is simply the best. I started out trading cryptocurrencies on Binance but
-                                after so many losses, I decided to seek for a real Broker to help me;{{$siteName}} has been
-                                that real broker for me for the past 1 year
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slingle_agent">
-                    <div class="d-flex">
-                        <div class="agent_author">
-                            <div class="author">
-                                <img src="https://ui-avatars.com/api/?name=Elizabeth+L" alt="">
-                            </div>
-                            <div class="quote">
-                                <i class="fas fa-quote-right"></i>
-                            </div>
-                        </div>
-                        <div class="agent_content">
-                            <div class="authoe_name">
-                                <h4>Elizabeth (Layla)</h4>
-                                <h5>Investor</h5>
-                            </div>
-                            <p>
-                                Navigating the world of financial freedom has been a hectic journey for me until I met with
-                                {{$siteName}}. Since then, I just relax and plan my vacation from my returns on {{$siteName}}.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-    </section>
-    <!-- Our Testimonials end -->
-
-    <div class="pricing-area" style="margin-bottom: 5rem;margin-top: 5rem;">
-        <div class="container">
-            <div class="section-title">
-                <span class="sub-title">Our Packages</span>
-                <h2>Specialized Investment Packages</h2>
-            </div>
             <div class="row justify-content-center">
                 @foreach($packages as $package)
                     @inject('option','App\Defaults\Custom')
@@ -639,18 +340,332 @@
 
             </div>
         </div>
-    </div>
-
-    <!-- Start Blog Area -->
-    <div class="blog-area pt-100 pb-70">
+    </section>
+    <!-- Blog Ends -->
+    <!-- Offer area starts -->
+    <section class="offer">
         <div class="container">
-            <div class="section-title">
-                <span class="sub-title">Latest Transactions</span>
-                <h2>Most Recent Transactions</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <div class="sub-heading">
+                            <img src="{{asset('home/images/section-title-icon.png')}}" alt="caret">
+                            <p>Why Choose Us</p>
+                        </div>
+                        <h2>Excellence at its Best</h2>
+                    </div>
+                </div>
             </div>
 
             <div class="row">
+                <div class="col-lg-4 r-mb">
+                    <div class="offer-wrapper">
+                        <iconify-icon icon="fluent-mdl2:design"></iconify-icon>
+                        <h5>AI-Driven Expertise</h5>
+                        <p>
+                            Our advanced AI algorithms enable us to make data-driven investment decisions, optimizing
+                            returns and minimizing risks.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 r-mb">
+                    <div class="offer-wrapper">
+                        <iconify-icon icon="fluent-mdl2:design"></iconify-icon>
+                        <h5>Extensive Industry Knowledge</h5>
+                        <p>
+                            Our team of experts brings years of experience and deep understanding of the agriculture,
+                            real estate, oil and gas, and mining sectors.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 r-mb">
+                    <div class="offer-wrapper">
+                        <iconify-icon icon="fluent-mdl2:design"></iconify-icon>
+                        <h5>Diversified Portfolio</h5>
+                        <p>
+                            We offer a well-balanced portfolio across multiple sectors, ensuring risk mitigation and
+                            maximizing potential returns.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 r-mb">
+                    <div class="offer-wrapper">
+                        <iconify-icon icon="fluent-mdl2:design"></iconify-icon>
+                        <h5>Access to Lucrative Opportunities</h5>
+                        <p>
+                            Through our extensive network and market research, we identify and invest in high-potential
+                            opportunities that may be inaccessible to individual investors.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 r-mb">
+                    <div class="offer-wrapper">
+                        <iconify-icon icon="fluent-mdl2:design"></iconify-icon>
+                        <h5>Transparent Approach</h5>
+                        <p>
+                            We believe in open communication and provide our clients with clear and transparent reporting
+                            on investment performance and strategy.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 r-mb">
+                    <div class="offer-wrapper">
+                        <iconify-icon icon="fluent-mdl2:design"></iconify-icon>
+                        <h5>Sustainable Investment</h5>
+                        <p>
+                            We prioritize investments in sustainable and environmentally responsible ventures, aligning
+                            with the growing demand for ethical investment options.
+                        </p>
+                    </div>
+                </div>
 
+
+            </div>
+        </div>
+    </section>
+    <!-- Offer area ends -->
+
+    <!-- Counter starts -->
+    <section class="counter">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 r-mb">
+                    <div class="counter-img">
+                        <img src="{{asset('home/images/counter-img.png')}}" alt="men">
+                        <img class="overlay" src="{{asset('home/images/counter-overlay.png')}}" alt="overlay">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <div class="sub-heading">
+                            <img src="{{asset('home/images/section-title-icon.png')}}" alt="caret">
+                            <p>Our achievements</p>
+                        </div>
+                        <h2>Building competitive business sectors</h2>
+                    </div>
+
+                    <div class="text-content">
+                        <p>Ballan wrasse climbing gourami amur pike Arctic char, steelhead sprat sea lamprey grunion. Old World
+                            knifefish pike
+                            conger burbot pollock herring?</p>
+
+                        <div class="counter-wrapper">
+                            <div class="single-counter">
+                                <h2>250+</h2>
+                                <p>Projects completed in last 5 years</p>
+                            </div>
+
+                            <div class="single-counter pt-28">
+                                <img src="{{asset('home/images/counter-arrow.png')}}" alt="arrow">
+                                <h2>500+</h2>
+                                <p>Happy Global Customers Who Trusted Us</p>
+                            </div>
+
+                            <div class="single-counter pt-28">
+                                <h2>120+</h2>
+                                <p>Intelligent minds behind the organization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter ends -->
+
+    <!-- Testimonials starts -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 z-id-10">
+                    <div class="row testimonial-slider">
+                        <div class="testimonial-wrapper">
+                            <i class="fas fa-quote-left"></i>
+                            <p>" Investing with {{$siteName}} has been a game-changer for my financial world.
+                                My first investment of $150 grew to yield over $1000 and that increased my faith in them.</p>
+
+                            <div class="client-info">
+                                <img src="https://ui-avatars.com/api/?name=Silver+alex" alt="man">
+                                <div class="client-name">
+                                    <h5>S. Alex</h5>
+                                    <span>Investor</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-wrapper">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"{{$siteName}} is simply the best. I started out trading cryptocurrencies on Binance but
+                                after so many losses, I decided to seek for a real Broker to help me;{{$siteName}} has been
+                                that real broker for me for the past 1 year</p>
+
+                            <div class="client-info">
+                                <img src="https://ui-avatars.com/api/?name=Sarah+T" alt="man">
+                                <div class="client-name">
+                                    <h5>Sarah T.</h5>
+                                    <span>Investor</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-wrapper">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Navigating the world of financial freedom has been a hectic journey for me until I met with
+                                {{$siteName}}. Since then, I just relax and plan my vacation from my returns on {{$siteName}}.</p>
+
+                            <div class="client-info">
+                                <img src="https://ui-avatars.com/api/?name=Elizabeth+L" alt="man">
+                                <div class="client-name">
+                                    <h5>Elizabeth L.</h5>
+                                    <span>Investor</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <div class="sub-heading">
+                            <img src="{{asset('home/images/section-title-icon.png')}}" alt="caret">
+                            <p>Testimonials</p>
+                        </div>
+                        <h2>What Clients are Saying about our services</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials ends -->
+
+    <!-- Video starts -->
+    <div class="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 padding-right">
+                    <a href="https://www.youtube.com/watch?v=tK4Q85BNGto" class="pulse popup-hero" target="_blank">
+                        <i class="fas fa-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video ends -->
+
+    <!-- FAQ starts -->
+    <section class="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 r-mb">
+                    <div class="section-title">
+                        <div class="sub-heading">
+                            <img src="{{asset('home/images/section-title-icon.png')}}" alt="caret">
+                            <p>FAQ</p>
+                        </div>
+                        <h2>Have any questions? ask us & get answer</h2>
+                    </div>
+
+                    <div class="faq-para">
+                        <p>A few frequently asked questions and suitable answers to them</p>
+                        <a href="{{url('faq')}}" class="button header-cta faq-btn">Explore More</a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is {{$siteName}}?
+                                    </button>
+                                </h2>
+                                <i class="fas fa-plus"></i>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>{{$siteName}} our company provides a full investment service focused on the bitcoin and cryptocurrency market We are among the best platforms to invest and grow your bitcoin and other cryptocurrency</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How do I create my account?
+                                    </button>
+                                </h2>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>Registration process is very easy and will take a few moments to complete Simply click CREATE ACCOUNT button  and fill in all the required fields</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        How do I make a deposit?
+                                    </button>
+                                </h2>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    To deposit funds in your trading account is quick and simple. For your
+                                    convenience you may choose one of the several available deposit methods.
+                                    To make a successful deposit please follow the steps below:<br>
+                                    <ul>
+                                        <li>Login to your account Click on the New Investment button in the
+                                            DASHBOARD section.<br>
+                                        </li>
+
+                                        <li>Choose the deposit option And fill the form including the amount and
+                                            the package.
+                                        </li>
+                                        <li>
+                                            You will receive the wallet address to make payment to on the next page.
+                                            After payment, contact support.
+                                        </li>
+                                        <li>
+                                            Once your deposit has been confirmed, the status of the investment will change
+                                            to <span class="text-primary">Ongoing</span> which means that it has been confirmed
+                                            and your investment started.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ ends -->
+
+    <!-- Blog starts -->
+    <section class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <div class="sub-heading">
+                            <img src="{{asset('home/images/section-title-icon.png')}}" alt="caret">
+                            <p>Latest Transactions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
                 <div class="col-md-6">
                     <div class="sec-title_title" style="margin-bottom: 3rem;margin-top: 3rem;">Recent Deposits</div>
                     <table class="table align-middle mb-0 bg-white">
@@ -698,34 +713,36 @@
 
             </div>
         </div>
-        </section>
-        <!-- End News One -->
+    </section>
+    <!-- Blog Ends -->
 
-        <!-- Our Blog start -->
 
-        <section class="blog_wrapper section-padding overflow-hidden">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-12 mb-30">
-                        <div class="section-title section-title_2 text-center">
-                            <h5><img src="{{asset('home/img/home-5/bage_02.svg')}}')}}')}}" alt=""> Blog & News</h5>
-                            <h2 class="text-white"> Latest Blog & News</h2>
+    <!-- Blog starts -->
+    <section class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <div class="sub-heading">
+                            <img src="{{asset('home/images/section-title-icon.png')}}" alt="caret">
+                            <p>Articles & News</p>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-
-                    <div class="col-lg-12 mt-30">
-                        <div class="single_blog">
-                            <rssapp-wall id="38kEBNRCi1vuK60z"></rssapp-wall>
-                            <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </section>
-        <!-- Our Blog end -->
+
+            <div class="row">
+                <div class="col-lg-12 r-mb">
+                    <div class="blog-wrapper">
+                        <rssapp-wall id="38kEBNRCi1vuK60z"></rssapp-wall>
+                        <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Blog Ends -->
 
 
 @endsection

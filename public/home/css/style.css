@@ -1,7 +1,3 @@
-/*----------------------------------------------------------------------------------
-Project     :  Befeis - Financial Consultation Template
--------------------------------------------------------------------------------------*/
-
 
 /*------------------------------------------------------------------------------------
 [Table of contents]
@@ -327,9 +323,9 @@ p {
     padding: 22px 0 22px 0;
     border-bottom: 1px solid rgba(100, 117, 137, 0.2);
 }
-.top-bar .phone, 
-.clock , 
-.envelope, 
+.top-bar .phone,
+.clock ,
+.envelope,
 .location{
     display: flex;
     align-items: center;
@@ -346,7 +342,7 @@ p {
 .social-icon svg:last-child {
     margin-right: 0;
 }
-.phone .icon, 
+.phone .icon,
 .clock .icon,
 .envelope .icon,
 .location .icon{
@@ -529,20 +525,20 @@ p {
 /*-------------------------------------------------------------------------------------
     hero area
 ---------------------------------------------------------------------------------------*/
-    
+
 .hero-utility {
     padding: 150px 120px;
     position: relative;
 }
 
 .single-slider-one {
-    background: url('../images/hero-img.png')top left;
+    background: url('../images/globaltrade.jpeg')top left;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .single-slider-two {
-    background: url('../images/hero-img-2.jpg') center center;
+    background: url('../images/aicloud.jpeg') center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -974,7 +970,7 @@ button.slick-arrow svg {
 .offer-wrapper:hover{
     background: #0D7DFC;
 }
-.offer-wrapper:hover>iconify-icon, 
+.offer-wrapper:hover>iconify-icon,
 .offer-wrapper:hover>h5,
 .offer-wrapper:hover>p,
 .offer-wrapper:hover>a{
@@ -1152,7 +1148,7 @@ button.slick-arrow svg {
     justify-content: center;
     margin-top: -68%;
     right: 13%;
-    z-index: 999999; 
+    z-index: 999999;
 }
 .hovered-state{
     background: #0D7DFC;
@@ -1260,7 +1256,7 @@ button.slick-arrow svg {
         Testimonials-area
 ---------------------------------------------------------------------------------------*/
 .testimonials{
-    position: relative; 
+    position: relative;
     padding: 67px 0 67px;
 }
 .testimonials .z-id-10{
@@ -1528,7 +1524,7 @@ button.slick-arrow svg {
     background-size: cover;
     padding: 166px 0;
     position: relative;
-    
+
 }
 
 .inner-hero::before{
@@ -1656,7 +1652,7 @@ button.slick-arrow svg {
 }
 .blog-page .blog-wrapper{
     margin-bottom: 30px;
-} 
+}
 .blog-page .blog-wrapper .date{
     bottom: 41%;
 }
@@ -1680,7 +1676,7 @@ button.slick-arrow svg {
 }
 .search,
 .categories,
-.recent-posts, 
+.recent-posts,
 .tags{
     margin-bottom: 50px;
 }
@@ -1702,7 +1698,7 @@ button.slick-arrow svg {
     cursor: pointer;
 }
 
-.categories h5, 
+.categories h5,
 .recent-posts h5,
 .tags h5{
     font-size: 22px;
@@ -2181,7 +2177,7 @@ button.slick-arrow svg {
 .home-2__topbar .meta-wrapper svg.rotate{
     transform: rotate(-36deg);
 }
-.home-2__topbar .meta-wrapper svg, 
+.home-2__topbar .meta-wrapper svg,
 .home-2__topbar .meta-wrapper span{
     color: #fff;
 }
@@ -2310,7 +2306,7 @@ button.slick-arrow svg {
 .home-2-cta .hero-cta{
     background: #0D7DFC;
     display: inline-block;
-    padding: 17px 39px; 
+    padding: 17px 39px;
     color: #fff;
 }
 .home-2 .hero-bg .hero-cta:hover,
@@ -2542,7 +2538,7 @@ button.slick-arrow svg {
     justify-content: end;
     flex-direction: column;
     position: absolute;
-    bottom: 25%;    
+    bottom: 25%;
 }
 
 .home-2-portfolio .portfolio-hovered .port-overlay{
@@ -2594,7 +2590,7 @@ button.slick-arrow svg {
 .why-choose-us{
     padding: 67px 0 0;
 }
-.why-choose-us .choose-text, 
+.why-choose-us .choose-text,
 .why-choose-us .choose-text p{
     margin-bottom: 10px;
 }
@@ -2870,7 +2866,7 @@ button.slick-arrow svg {
 /*-------------------------------------------------------------------------------------
        Home 3 Hero
 ---------------------------------------------------------------------------------------*/
-.home-3-hero .hero-img img{ 
+.home-3-hero .hero-img img{
     width: 100%;
 }
 .home-3-hero .hero-text span{
@@ -3115,7 +3111,7 @@ button.slick-arrow svg {
     background: #0D7DFC;
     position: absolute;
     right: 4%;
-    bottom: 45%;    
+    bottom: 45%;
     padding: 18px 25px;
 }
 .home-3-blg .blog-wrapper .blg-meta p{

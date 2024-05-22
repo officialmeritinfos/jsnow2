@@ -1,421 +1,396 @@
 
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-    <!-- ========== Meta Tags ========== -->
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="dev_raj">
-    <!-- ======== Page title ============ -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7,user-scalable=yes">
     <meta name="og:title" content="{{$siteName}}"/>
     <meta name="og:type" content="company"/>
     <meta name="og:url" content="/"/>
     <meta name="og:image" content="{{asset('home/images/'.$web->logo)}}"/>
     <meta name="og:site_name" content="{{$siteName}}"/>
-    <meta name="og:description" content="Comprehensive financial advice and investment services that are tailored to meet your individual needs."/>
+    <meta name="og:description" content="AI-integrated Financial and asset management company"/>
     <meta name="description" content="{{$web->description}}">
     <meta name="keywords" content="business, marketing, agency">
     <title> {{$siteName}} | {{$pageName}}</title>
     <!-- favicons Icons -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('home/images/'.$web->logo)}}" />
     @stack('css')
-    <!-- ===========  All Stylesheet ================= -->
-    <!--  Icon css plugins -->
-    <link rel="stylesheet" href="{{asset('home/css/icons.css')}}">
-    <!--  magnific-popup css plugins -->
-    <link rel="stylesheet" href="{{asset('home/css/magnific-popup.css')}}">
-    <!-- slick slider menu css file -->
-    <link rel="stylesheet" href="{{asset('home/css/slick.min.css')}}">
-    <!-- animate animation css file -->
-    <link rel="stylesheet" href="{{asset('home/css/animate.min.css')}}">
-    <!--  Bootstrap css plugins -->
+    <!-- bootstrap -->
     <link rel="stylesheet" href="{{asset('home/css/bootstrap.min.css')}}">
-    <!-- template main style css file -->
-    <link rel="stylesheet" href="{{asset('home/style.css')}}">
-
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="{{asset('home/css/all.min.css')}}">
+    <!-- progress bar -->
+    <link rel="stylesheet" href="{{asset('home/css/jQuery-plugin-progressbar.css')}}">
+    <!-- mean menu -->
+    <link rel="stylesheet" href="{{asset('home/css/meanmenu.css')}}">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="{{asset('home/css/fontawesome.min.css')}}">
+    <!-- slick -->
+    <link rel="stylesheet" href="{{asset('home/css/slick.css')}}">
+    <!-- nice select -->
+    <link rel="stylesheet" href="{{asset('home/css/nice-select.css')}}">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="{{asset('home/css/magnific-popup.css')}}">
+    <!-- style -->
+    <link rel="stylesheet" href="{{asset('home/css/style.css')}}">
+    <!-- responsive -->
+    <link rel="stylesheet" href="{{asset('home/css/responsive.css')}}">
 </head>
 
-<body class="body-wrapper">
+<body>
 @inject('injected','App\Defaults\Custom')
-
-<!-- header end -->
-<header class="header-1 header-4">
-    <div class="top-header top-header-2">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-4 col-md-2  d-none d-xl-block">
-                    <div class="logo">
-                        <a href="{{url('/')}}">
-                            <img src="{{asset('home/images/'.$web->logo)}}" alt="logo">
-                        </a>
+<!-- preloader -->
+{{--<div id="loading">--}}
+{{--    <div id="loading-center">--}}
+{{--        <div id="loading-center-absolute">--}}
+{{--            <div class="object" id="object_four"></div>--}}
+{{--            <div class="object" id="object_three"></div>--}}
+{{--            <div class="object" id="object_two"></div>--}}
+{{--            <div class="object" id="object_one"></div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
+<!-- topbar starts -->
+<div class="top-bar">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            @if(!empty($web->phone))
+                <div class="phone">
+                    <div class="icon">
+                        <img src="{{asset('home/images/phone.png')}}" alt="phone">
+                    </div>
+                    <div class="text">
+                        <p>Chat on Whatsapp</p>
+                        <span class="bold">{{$web->phone}}</span>
                     </div>
                 </div>
-                <div class=" col-md-12 col-xl-10">
-                    <div class="row">
-                        <div class="col-12 d-none d-xl-block">
-                            <div class="row align-items-center py-2">
-                                <div class="col-9">
-                                    <div class="header-cta">
-                                        <ul>
-                                            <li><a><i class="fal fa-clock"></i> Mon – Fri: 8.00 – 18.00</a></li>
-                                            <li><a><i class="fal fa-clock"></i> Sun – Sat: 9.00 – 12.00</a></li>
-                                            <li><a href="mailto:{{$web->email}}"><i class="icon-email"></i>{{$web->email}}</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+            @endif
 
-{{--                                <div class="col-3">--}}
-{{--                                    <div class="header-right-socail d-flex justify-content-end align-items-center">--}}
-{{--                                        <h6 class="font-la  fw-600">Follow On:</h6>--}}
-
-{{--                                        <div class="social-profile">--}}
-{{--                                            <ul>--}}
-{{--                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>--}}
-{{--                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>--}}
-{{--                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>--}}
-{{--                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>--}}
-{{--                                            </ul>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-                            </div>
-                        </div>
-                        <div class="col-12 p-0">
-                            <div class="main-nav-menu d-flex align-items-center justify-content-between">
-                                <div class="header-logo d-xl-none d-block">
-                                    <div class="logo">
-                                        <a href="{{url('/')}}">
-                                            <img src="{{asset('home/images/'.$web->logo)}}" alt="logo">
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="header-menu d-none d-xl-block">
-                                    <div class="main-menu">
-                                        <ul>
-                                            <li >
-                                                <a href="{{url('/')}}" >Home</a>
-                                            </li>
-                                            <li >
-                                                <a href="{{url('about')}}" >About</a>
-                                            </li>
-
-                                            <li ><a href="#">Pages</a>
-                                                <ul >
-                                                    <li ><a href="{{url('plans')}}" >Plans</a></li>
-                                                    <li ><a href="{{url('faqs')}}" >Frequently Asked Questions</a></li>
-                                                    <li ><a href="{{url('terms')}}" >Terms & Conditions</a></li>
-                                                    <li ><a href="{{url('privacy')}}" >Privacy policy</a></li>
-                                                </ul>
-                                            </li>
-
-                                            <li ><a href="#" >Services</a>
-                                                <ul >
-                                                    @foreach($injected->getServices() as $service)
-                                                        <li ><a href="{{route('service.details',['id'=>$service->id])}}" >{{$service->title}}</a></li>
-                                                    @endforeach
-                                                </ul>
-                                            </li>
-
-                                            <li ><a href="#" >Account</a>
-                                                <ul >
-                                                    <li ><a href="{{route('login')}}" >Login</a></li>
-
-                                                    <li ><a href="{{route('register')}}" >Register</a></li>
-                                                </ul>
-                                            </li>
-
-                                            <li ><a href="{{url('contact')}}" >Contact</a></li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="header-right d-flex align-items-center justify-content-end">
-                                    <div class="header-search">
-                                        <a class="search-toggle" data-selector=".header-search">
-                                            <span class="fas fa-search"></span>
-                                        </a>
-
-                                        <form class="search-box" action="#" method="get">
-                                            <div class="form-group d-flex align-items-center">
-                                                <input type="search" name="s" value="" class="search-input" id="search" placeholder="Search">
-                                                <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
-                                            </div>
-                                        </form>
-                                    </div>
-
-                                    <div class="horizontal-bar d-none d-md-block"></div>
-
-                                    @if(!empty($web->phone))
-                                    <a href="tel:{{$web->phone}}" class=" header-contact d-lg-flex d-none  align-items-center">
-                                        <div class="icon color-yellow">
-                                            <i class="icon-call"></i>
-                                        </div>
-                                        <div class="text">
-                                            <span class="font-la mb-2 d-block fw-500 text-white">Contact For Support</span>
-                                            <h5 class="fw-500 text-white">{{$web->phone}}</h5>
-                                        </div>
-                                    </a>
-                                    @endif
-                                    <a href="{{route('register')}}" class="theme-btn btn__2 bg-yellow d-none d-sm-block">Get Started <i class="far fa-chevron-double-right"></i></a>
-                                    <div class="mobile-nav-bar d-block ml-3 ml-sm-5 d-xl-none">
-                                        <div class="mobile-nav-wrap">
-                                            <div id="hamburger">
-                                                <i class="fal fa-bars"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="clock">
+                <div class="icon">
+                    <img src="{{asset('home/images/clock.png')}}" alt="phone">
                 </div>
+                <div class="text">
+                    <p>Sunday - Saturday:</p>
+                    <span class="bold">24/7</span>
+                </div>
+            </div>
+
+            <div class="envelope">
+                <div class="icon">
+                    <img src="{{asset('home/images/envelope.png')}}" alt="phone">
+                </div>
+                <div class="text">
+                    <p>Contact Us:</p>
+                    <span class="bold">{{$web->email}}</span>
+                </div>
+            </div>
+
+            <div class="location">
+                <div class="icon">
+                    <img src="{{asset('home/images/location.png')}}" alt="phone">
+                </div>
+                <div class="text">
+                    <p>{!! $web->address !!}</p>
+                </div>
+            </div>
+
+            <div class="social-icon">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- topbar ends -->
+
+<!-- header starts-->
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="site-logo">
+                    <a href="{{url('/')}}">
+                        <img src="{{asset('home/images/'.$web->logo)}}" alt="company logo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-10 col-md-6 col-sm-4 d-flex justify-content-end">
+                <nav class="main-menu" id="mobile-menu">
+                    <ul>
+
+                        <li>
+                            <a href="{{url('/')}}">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="{{url('about')}}">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Services +</a>
+                            <ul class="submenu">
+                                @foreach($injected->getServices() as $service)
+                                    <li ><a href="{{route('service.details',['id'=>$service->id])}}" >{{$service->title}}</a></li>
+                                @endforeach
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a data-scroll href="#">Pages +</a>
+                            <ul class="submenu">
+                                <li ><a href="{{url('plans')}}" >Plans</a></li>
+                                <li ><a href="{{url('faqs')}}" >Frequently Asked Questions</a></li>
+                                <li ><a href="{{url('terms')}}" >Terms & Conditions</a></li>
+                                <li ><a href="{{url('privacy')}}" >Privacy policy</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a data-scroll href="#">Account +</a>
+                            <ul class="submenu">
+                                <li ><a href="{{route('login')}}" >Login</a></li>
+
+                                <li ><a href="{{route('register')}}" >Register</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a data-scroll href="{{url('contact')}}">Contact</a>
+                        </li>
+
+                        <li class="button header-cta">
+                            <a href="{{route('register')}}"><span>Get Started <i class="fas fa-arrow-right"></i></span> </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-12">
+                <div class="mobile-menu"></div>
             </div>
         </div>
     </div>
 </header>
-<!-- mobile menu - responsive menu  -->
-<div class="mobile-nav">
-    <button type="button" class="close-nav">
-        <i class="fal fa-times-circle"></i>
-    </button>
-
-    <nav class="sidebar-nav">
-        <div class="navigation">
-            <div class="consulter-mobile-nav">
-                <ul>
-                    <li >
-                        <a href="{{url('/')}}" >Home</a>
-                    </li>
-                    <li >
-                        <a href="{{url('about')}}" >About</a>
-                    </li>
-
-                    <li ><a href="#">Pages</a>
-                        <ul >
-                            <li ><a href="{{url('plans')}}" >Plans</a></li>
-                            <li ><a href="{{url('faqs')}}" >Frequently Asked Questions</a></li>
-                            <li ><a href="{{url('terms')}}" >Terms & Conditions</a></li>
-                            <li ><a href="{{url('privacy')}}" >Privacy policy</a></li>
-                        </ul>
-                    </li>
-
-                    <li ><a href="#" >Services</a>
-                        <ul >
-                            @foreach($injected->getServices() as $service)
-                                <li ><a href="{{route('service.details',['id'=>$service->id])}}" >{{$service->title}}</a></li>
-                            @endforeach
-                        </ul>
-                    </li>
-
-                    <li ><a href="#" >Account</a>
-                        <ul >
-                            <li ><a href="{{route('login')}}" >Login</a></li>
-
-                            <li ><a href="{{route('register')}}" >Register</a></li>
-                        </ul>
-                    </li>
-
-                    <li ><a href="{{url('contact')}}" >Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="sidebar-nav__bottom mt-20">
-                <div class="sidebar-nav__bottom-contact-infos mb-20">
-                    <h6 class="color-black mb-5">Contact Info</h6>
-
-                    <ul>
-                        <li><a><i class="fal fa-clock"></i> Mon – Sun: 24/7</a></li>
-                        <li><a href="mailto:{{$web->email}}"><i class="icon-email"></i>{{$web->email}}</a></li>
-                        @if(!empty($web->phone))
-                        <li>
-                            <a class="header-contact d-flex align-items-center">
-                                <div class="icon">
-                                    <i class="icon-call"></i>
-                                    <!-- <img src="{{asset('home/img/icon/phone-1.svg')}}')}}')}}" alt=""> -->
-                                </div>
-                                <div class="text">
-                                    <span class="font-la mb-5 d-block fw-500">Contact For Support</span>
-                                    <h5 class="fw-500">{{$web->phone}}</h5>
-                                </div>
-                            </a>
-                        </li>
-                        @endif
-                    </ul>
-                </div>
-
-                <div class="sidebar-nav__bottom-social">
-                    <h6 class="color-black mb-5">Follow On:</h6>
-
-                    <ul>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
-<!-- header end -->
-<!-- <div class="header-gutter"></div> -->
+<!-- header ends-->
 
 @yield('content')
-<!-- footer start -->
-
-<footer class="footer_wrapper footer-1 overflow-hidden">
-    <div class="footer-top mb-xs-5 mb-sm-10 mb-md-15 mb-lg-20 mb-25 overflow-hidden">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer_top_content text-center">
-                        <h2>Connect and Earn while Investing</h2>
-                        <p>Join host of others who are earning while they sleep; put your money into good use for your tomorrow</p>
-                        <a href="{{route('register')}}" class="theme-btn btn__2 bg-yellow">Join Us <i class="fas fa-paper-plane"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="single-footer-wid site_info_box">
-                        <a href="{{url('/')}}" class="d-block mb-20">
-                            <img src="{{asset('home/images/'.$web->logo)}}" alt="">
-                        </a>
-
-                        <div class="description font-la color-white">
-
-                        </div>
-                    </div>
-                </div>
 
 
-            </div>
-        </div>
-    </div>
-
+<!-- footer -->
+<footer class="footer">
     <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-md-6 col-xl-3">
-                <div class="single-footer-wid contact_widget">
-                    <h4 class="wid-title mb-30 color-white">Working Time</h4>
 
-                    <div class="contact-wrapper pt-30 pr-30 pb-30 pl-30">
-                        <div class="wid-contact pb-30 mb-25">
-                            <ul>
-                                <li>
-                                    <div class="icon">
-                                        <i class="far fa-clock"></i>
-                                    </div>
-
-                                    <div class="contact-info font-la color-white">
-                                        <p>Mon - Sat / 24/7</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="icon">
-                                        <i class="far fa-clock"></i>
-                                    </div>
-
-                                    <div class="contact-info font-la color-white">
-                                        <p>Mon - Sat / 24/7</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="icon">
-                                        <i class="far fa-clock"></i>
-                                    </div>
-
-                                    <div class="contact-info font-la color-white">
-                                        <p>Sunday 24/7</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="social-profile">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+        <div class="row widgets">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="widget">
+                    <a href="{{url('/')}}">
+                        <img src="{{asset('home/images/'.$web->logo)}}" alt="logo">
+                    </a>
+                    <p></p>
                 </div>
             </div>
 
-            <div class="col-md-6 col-xl-2">
-                <div class="single-footer-wid pl-xl-10 pl-50">
-                    <h4 class="wid-title mb-30 color-white">Quick Link</h4>
-
+            <div class="col-lg-3 col-md-6 col-sm-6 d-center">
+                <div class="widget w-text">
+                    <h5>Need Help?</h5>
                     <ul>
-                        <li><a href="{{url('about')}}">About us</a></li>
-                        <li><a href="{{url('contact')}}">Contact Us</a></li>
-                        <li><a href="{{url('plans')}}">Plans</a></li>
-                        <li><a href="{{url('faqs')}}">FAQs</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-xl-4">
-                <div class="single-footer-wid single-footer-wid_2 recent_post_widget pl-xl-10 pl-65 pr-50 pr-xl-30">
-
-                </div>
-            </div>
-
-            <div class="col-md-6 col-xl-3">
-                <div class="single-footer-wid">
-                    <h4 class="wid-title mb-30 color-white">Office Location</h4>
-                    <ul>
-                        @if(!empty($web->phone))
-                            <li><span>Call:</span> <a href="tel:{{$web->phone}}">{{$web->phone}}</a></li>
-                        @endif
-                        <li><span>Email:</span> <a href="mailto:{{$web->email}}">{{$web->email}}</a></li>
-                        <li><span>Address:</span> <a>{{$web->address}}</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer-bottom overflow-hidden">
-        <div class="container">
-            <div class="footer-bottom-content d-flex flex-column flex-md-row justify-content-between align-items-center">
-                <div class="coppyright coppyright-2 text-center text-md-start">
-                    &copy; 2010 - {{date('Y')}} <a href="{{url('/')}}">{{$siteName}}</a> | All Rights Reserved.
-                </div>
-
-                <div class="footer-bottom-list footer-bottom-list_2 last_no_bullet">
-                    <ul>
-                        <li><a href="{{url('terms')}}">Terms & Conditions</a></li>
+                        <li><a href="{{url('contact')}}">Support</a></li>
+                        <li><a href="{{route('register')}}">Get Started</a></li>
+                        <li><a href="{{url('terms')}}">Terms Of use</a></li>
                         <li><a href="{{url('privacy')}}">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 d-center">
+                <div class="widget w-text">
+                    <h5>Learn More</h5>
+                    <ul>
+                        <li><a href="{{url('about')}}">About</a></li>
+                        <li><a href="{{url('plans')}}">Plans</a></li>
+                        <li><a href="{{route('login')}}">Customer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 d-center">
+                <div class="widget w-text">
+                    <h5>Get In Touch</h5>
+                    <ul>
+                        <li><a href="#">{!! $web->address !!}</a></li>
+                        <li><a href="#">{{$web->email}} <br>
+                            {{$web->phone}}</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-<!-- footer end -->
+<div class="footer-copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer-menu text-center">
+                    <p>© 2009 - {{date('Y')}} <span>{{$siteName}}</span>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<!--  ALl JS Plugins
-====================================== -->
-<script src="{{asset('home/js/jquery.min.js')}}"></script>
-<script src="{{asset('home/js/modernizr.min.js')}}"></script>
-<script src="{{asset('home/js/jquery.easing.js')}}"></script>
-<script src="{{asset('home/js/popper.min.js')}}"></script>
+<!-- back to top button -->
+<div class="top-btn ">
+    <i class="fas fa-chevron-up "></i>
+</div>
+
+<!-- jquery -->
+<script src="{{asset('home/js/jquery-1.12.4.min.js')}}"></script>
+<!-- bootstrap -->
 <script src="{{asset('home/js/bootstrap.min.js')}}"></script>
+<!-- progress bar -->
+<script src="{{asset('home/js/jQuery-plugin-progressbar.js')}}"></script>
+<!-- fontawesome js-->
+<script src="{{asset('home/js/all.min.js')}}"></script>
+<!-- mean menu js -->
+<script src="{{asset('home/js/jquery.meanmenu.min.js')}}"></script>
+<!-- fontawesome js -->
+<script src="{{asset('home/js/fontawesome.min.js')}}"></script>
+<!-- slick js-->
 <script src="{{asset('home/js/slick.min.js')}}"></script>
-<script src="{{asset('home/js/scrollUp.min.js')}}"></script>
-<script src="{{asset('home/js/counterup.min.js')}}"></script>
-<script src="{{asset('home/js/jquery.sticky-kit.js')}}"></script>
-<script src="{{asset('home/js/magnific-popup.min.js')}}"></script>
-<script src="{{asset('home/js/jquery.easypiechart.min.js')}}"></script>
-<script src="{{asset('home/js/active.js')}}"></script>
+<!-- nice select js-->
+<script src="{{asset('home/js/jquery.nice-select.min.js')}}"></script>
+<!-- magnific popup js-->
+<script src="{{asset('home/js/jquery.magnific-popup.js')}}"></script>
+<!-- isotope  js-->
+<script src="{{asset('home/js/isotope.pkgd.min.js')}}"></script>
+<!-- iconify -->
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js')}}"></script>
+<!-- main -->
+<script src="{{asset('home/js/app.js')}}"></script>
+<!-- Google language start -->
+<style>
 
+    #google_translate_element {
+        z-index: 9999999;
+        position: fixed;
+        bottom: 25px;
+        left: 15px;
+    }
+
+    .goog-te-gadget {
+        font-family: Roboto, "Open Sans", sans-serif !important;
+        text-transform: uppercase;
+    }
+    .goog-te-gadget-simple
+    {
+        padding: 0px !important;
+        line-height: 1.428571429;
+        color: white;
+        vertical-align: middle;
+        background-color: black;
+        border: 1px solid #a5a5a599;
+        border-radius: 4px;
+        float: right;
+        margin-top: -4px;
+        z-index: 999999;
+    }
+    .goog-te-banner-frame.skiptranslate
+    {
+        display: none !important;
+        color: white;
+    }
+    .goog-te-gadget-icon
+    {
+        background: none !important;
+        display: none;
+        color: white;
+    }
+    .goog-te-gadget-simple .goog-te-menu-value
+    {
+        font-size: 12px;
+        color: white;
+        font-family: 'Open Sans' , sans-serif;
+    }
+</style>
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+    window.onload = function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- start popup massage -->
+<div class="notifier" style="display: none;">
+    <div class="txt" style="color:black;">While you are waiting,someone from <b></b> just traded with <a href="javascript:void(0);" onclick="javascript:void(0);"></a></div>
+</div>
+<style>
+    .notifier{
+        border-radius: 7px;
+        position: fixed;
+        z-index: 90;
+        bottom: 80px;
+        right: 50px;
+        background: #fff;
+        padding: 15px 40px;
+        box-shadow: 0px 5px 13px 0px rgba(0,0,0,.3);
+    }
+    .notifier a {
+        font-weight: 700;
+        display: block;
+        color:#0080FF;
+    }
+    .notifier a, .notifier a:active {
+        transition: all .2s ease;
+        color:#0080FF;
+    }
+</style>
+<script data-cfasync="false" src="#"></script><script type="text/javascript">
+    var listCountries = ['Germany', 'Spain', 'Russia', 'Italy',
+        'Italy',  'United States', 'Egypt',
+        'United Kingdom', "United States","England","Germany","Germany","United States","Switzerland",
+        "Austria","Austria","Austria","Australia","Australia","Australia","Russia","Russia",
+        "United States","United Kingdom","Spain","Spain","India","England","Italy","Ukraine"
+    ];
+    var listPlans = ['$500','$5000','$1,000','$1000','$550','$3000','$690', '$360',
+        '$700', '$600',"$500","$700","$1,000","$1289","$5000","$7000","$10000"];
+    interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
+    var run = setInterval(request, interval);
+
+    function request() {
+        clearInterval(run);
+        interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
+        var country = listCountries[Math.floor(Math.random() * listCountries.length)];
+        var plan = listPlans[Math.floor(Math.random() * listPlans.length)];
+        var msg = 'While you are still contemplating ,an investor from <b>' + country + '</b> ' +
+            'just traded with <a href="javascript:void(0);" onclick="javascript:void(0);">' + plan + ' .</a>';
+        $(".notifier .txt")(msg);
+        $(".notifier").stop(true).fadeIn(300);
+        window.setTimeout(function() {
+            $(".notifier").stop(true).fadeOut(300);
+        }, 6000);
+        run = setInterval(request, interval);
+    }
+</script>
+<!-- end popup massage -->
 </body>
 </html>

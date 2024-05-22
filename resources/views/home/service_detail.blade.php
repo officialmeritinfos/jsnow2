@@ -1,53 +1,48 @@
 @extends('home.base')
 @section('content')
-    <!-- End Page-title Area -->
-    <section class="page-banner pt-xs-60 pt-sm-80 overflow-hidden">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="page-banner__content mb-xs-10 mb-sm-15 mb-md-15 mb-20">
-                        <div class="transparent-text">{{$pageName}}</div>
-                        <div class="page-title">
-                            <h1>{{$pageName}}</h1>
+    <!-- Hero area starts-->
+    <section class="hero-area ">
+        <div class="hero-banner">
+            <div class="inner-hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12">
+                            <div class="hero-text">
+                                <h2>{{$pageName}}</h2>
+                                <span><a href="{{url('/')}}" class="home">Home</a> | <a href="#" class="disabled">About</a></span>
+                            </div>
+
                         </div>
-                    </div>
-
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">{{$pageName}}</li>
-                        </ol>
-                    </nav>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="page-banner__media mt-xs-30 mt-sm-40">
-                        <img src="{{asset('home/img/page-banner/page-banner-start.svg')}}" class="img-fluid start" alt="">
-                        <img src="{{asset('home/img/page-banner/page-banner.jpg')}}" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Hero area ends -->
 
-    <!-- Start Services Details Area -->
-    <div class="services-details-area ptb-100">
+    <!-- Service Details starts -->
+    <section class="service-details">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="services-details-desc">
-                        <h3>{{$service->title}}</h3>
-                        <p>{{$service->short}}</p>
-                        <img src="{{asset('home/serv/'.$service->photo)}}" alt="image">
+
+                <div class="col-lg-12">
+                    <div class="service-detail-img">
+                        <img src="{{asset('home/serv/'.$service->photo)}}" alt="men">
+                    </div>
+                </div>
+                <div class="col-lg-12 mt-4">
+                    <div class="service-detail-text">
+                        <h5>{{$service->title}}</h5>
                         <p>
                             {!! str_replace('MYSITE',$siteName,$service->content) !!}
                         </p>
                     </div>
                 </div>
-
-
             </div>
+
         </div>
-    </div>
+    </section>
+
+
 
 @endsection
