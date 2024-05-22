@@ -37,7 +37,9 @@ class Dashboard extends Controller
             'latests'=>Investment::where([
                 'user'=>$user->id,'status'=>4
             ])->limit(5)->get(),
-            'promos'=>Promo::where('status',1)->get(),
+            'promos'=>Promo::where('status',1)->where(function ($query) use ($user){
+                $query->where('user',$user->id)->orWhere('user',null)->get();
+            })->get(),
             'notifications'=>Notification::where('status',1)->where('user',$user->id)->get()
         ];
 

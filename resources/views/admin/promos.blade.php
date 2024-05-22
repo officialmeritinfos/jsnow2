@@ -16,6 +16,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                     <tr>
+                        <th>User</th>
                         <th>Title</th>
                         <th>Content</th>
                         <th>Status</th>
@@ -24,7 +25,9 @@
                     </thead>
                     <tbody>
                     @foreach($promos as $promo)
+                        @inject('option','App\Defaults\Custom')
                         <tr>
+                            <td>{{empty($promo->user)?'All':$option->getInvestor($promo->user)}}</td>
                             <td>{{$promo->title}}</td>
                             <td>{!! $promo->content !!}</td>
                             <td>

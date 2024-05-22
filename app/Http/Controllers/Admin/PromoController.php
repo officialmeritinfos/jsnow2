@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\GeneralSetting;
 use App\Models\Promo;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -38,6 +39,7 @@ class PromoController extends Controller
             'user'     =>  $user,
             'web'=>$web,
             'promo'=>$Promo,
+            'investors'=>User::where('status',1)->get()
         ];
 
         return view('admin.promo_details',$dataView);
@@ -52,6 +54,7 @@ class PromoController extends Controller
             'title'=>['required','string'],
             'content'=>['required','string'],
             'status'=>['required','numeric'],
+            'user'=>['nullable','numeric'],
         ]);
 
         if ($validator->fails()){
@@ -62,7 +65,7 @@ class PromoController extends Controller
 
         $data = [
             'title'=>$input['title'],'content'=>$input['content'],
-            'status'=>$input['status'],
+            'status'=>$input['status'],'user'=>$input['user']
         ];
 
         Promo::where('id',$input['id'])->update($data);
@@ -85,6 +88,7 @@ class PromoController extends Controller
             'pageName' => 'New Promos',
             'user'     =>  $user,
             'web'=>$web,
+            'investors'=>User::where('status',1)->get()
         ];
 
         return view('admin.new_promo',$dataView);
@@ -97,6 +101,7 @@ class PromoController extends Controller
             'title'=>['required','string'],
             'content'=>['required','string'],
             'status'=>['required','numeric'],
+            'user'=>['nullable','numeric'],
         ]);
 
         if ($validator->fails()){
@@ -108,7 +113,7 @@ class PromoController extends Controller
         $data = [
             'title'=>$input['title'],
             'content'=>$input['content'],
-            'status'=>$input['status'],
+            'status'=>$input['status'],'user'=>$input['user']
         ];
 
         Promo::create($data);

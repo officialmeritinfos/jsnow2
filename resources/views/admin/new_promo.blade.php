@@ -26,6 +26,16 @@
                             <textarea type="text" class="form-control summernote" id="inputEmail4" placeholder="Content"
                                       name="content" rows="4"></textarea>
                         </div>
+                        <div class="form-group col-md-12">
+                            <label for="inputAddress">Investor</label>
+                            <select type="text" class="form-control" id="inputAddress"
+                                    name="user">
+                                <option value="">Select Investor</option>
+                                @foreach($investors as $investor)
+                                    <option value="{{$investor->id}}" >{{$investor->name}} ({{$investor->username}})</option>
+                                @endforeach
+                            </select>
+                        </div>
 
                         <div class="form-group col-md-12">
                             <label for="inputAddress">Status</label>

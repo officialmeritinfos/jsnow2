@@ -25,9 +25,9 @@
         </div>
     </div>
 @endforeach
-    
 
-    <div class="today-card-area pt-24" style="margin-top:-3rem;">
+
+    <div class="today-card-area pt-24 mt-3" style="margin-top:-3rem;">
         <div class="container-fluid">
             @include('templates.notification')
             <div class="row justify-content-between">
@@ -41,7 +41,7 @@
                          <a href="{{route('new_withdrawal')}}" class="btn btn-primary rounded-pill">Withdraw</a>
                     </div>
                 </div>
-                
+
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-sm-6">
@@ -134,7 +134,7 @@
                     </div>
                 </div>
 
-                
+
 
 
                 <!--<div class="col-lg-3 col-sm-6">-->
