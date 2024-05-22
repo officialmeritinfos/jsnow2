@@ -542,7 +542,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 padding-right">
-                    <a href="https://www.youtube.com/watch?v=tK4Q85BNGto" class="pulse popup-hero" target="_blank">
+                    <a href="#" class="pulse popup-hero" target="_blank">
                         <i class="fas fa-play"></i>
                     </a>
                 </div>
