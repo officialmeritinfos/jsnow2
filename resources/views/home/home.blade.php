@@ -259,7 +259,7 @@
     <!-- About area ends -->
 
     <!-- Offer area starts -->
-    <section class="offer">
+    <section class="offer" style="margin-top: -10rem;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -294,7 +294,7 @@
     </section>
     <!-- Offer area ends -->
     <!-- Blog starts -->
-    <section class="blog">
+    <section class="blog" style="margin-top: -10rem;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -343,7 +343,7 @@
     </section>
     <!-- Blog Ends -->
     <!-- Offer area starts -->
-    <section class="offer">
+    <section class="offer" style="margin-top: -10rem;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -425,56 +425,8 @@
     </section>
     <!-- Offer area ends -->
 
-    <!-- Counter starts -->
-    <section class="counter">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 r-mb">
-                    <div class="counter-img">
-                        <img src="{{asset('home/images/counter-img.png')}}" alt="men">
-                        <img class="overlay" src="{{asset('home/images/counter-overlay.png')}}" alt="overlay">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="section-title">
-                        <div class="sub-heading">
-                            <img src="{{asset('home/images/section-title-icon.png')}}" alt="caret">
-                            <p>Our achievements</p>
-                        </div>
-                        <h2>Building competitive business sectors</h2>
-                    </div>
-
-                    <div class="text-content">
-                        <p>Ballan wrasse climbing gourami amur pike Arctic char, steelhead sprat sea lamprey grunion. Old World
-                            knifefish pike
-                            conger burbot pollock herring?</p>
-
-                        <div class="counter-wrapper">
-                            <div class="single-counter">
-                                <h2>250+</h2>
-                                <p>Projects completed in last 5 years</p>
-                            </div>
-
-                            <div class="single-counter pt-28">
-                                <img src="{{asset('home/images/counter-arrow.png')}}" alt="arrow">
-                                <h2>500+</h2>
-                                <p>Happy Global Customers Who Trusted Us</p>
-                            </div>
-
-                            <div class="single-counter pt-28">
-                                <h2>120+</h2>
-                                <p>Intelligent minds behind the organization</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Counter ends -->
-
     <!-- Testimonials starts -->
-    <section class="testimonials">
+    <section class="testimonials" style="margin-top: -5rem;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 z-id-10">
@@ -538,7 +490,7 @@
     <!-- Testimonials ends -->
 
     <!-- Video starts -->
-    <div class="video">
+    <div class="video" style="margin-top: -5rem;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 padding-right">
@@ -552,7 +504,7 @@
     <!-- Video ends -->
 
     <!-- FAQ starts -->
-    <section class="faq">
+    <section class="faq" style="margin-top: -5rem;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 r-mb">
@@ -652,7 +604,7 @@
     <!-- FAQ ends -->
 
     <!-- Blog starts -->
-    <section class="blog">
+    <section class="blog" style="margin-top: -5rem;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -718,7 +670,7 @@
 
 
     <!-- Blog starts -->
-    <section class="blog">
+    <section class="blog" style="margin-top: -5rem;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
